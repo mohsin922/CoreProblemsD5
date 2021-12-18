@@ -1,25 +1,29 @@
 ﻿using System;
 
-public class PrimeFactors
+public class QuotientNRemainder
 {
 
-    public static void primeFactors(int num)
+    public static void quotient(int dividend, int divisor)
     {
-        for (int i = 2; i <= num; i++)
-        {
-            while (num % i == 0)
-            {
-                Console.WriteLine(i);
-                num = num / i;
-            }
-        }
+        int ans = dividend / divisor;
+        Console.WriteLine("The quotient is : " + ans);
+    }
+
+    public static void remainder(int dividend, int divisor)
+    {
+        int ans = dividend % divisor;
+        Console.WriteLine("The remainder is : " + ans);
     }
     public static void Main(String[] args)
     {
 
-        Console.WriteLine("Enter the number : ");
-        int input = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Prime factors  of " + input + " are : ");
-        primeFactors(input);
+
+        Console.WriteLine("Enter the number for Dividend : ");
+        int dividend = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter the number for Divisor : ");
+        int divisor = Convert.ToInt32(Console.ReadLine());
+        quotient(dividend, divisor);
+        remainder(dividend, divisor);
+
     }
 }
