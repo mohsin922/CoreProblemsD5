@@ -1,25 +1,27 @@
 ﻿using System;
 namespace CoreProblems
 {
-    public class EvenOrOdd
+    public class vowels
     {
+        static void Main(string[] args)
+        {
+            char ch;
 
-        public static void check(int n)
-        {
-            if (n % 2 == 0)
+            Console.WriteLine("Enter any character: ");
+            ch = Convert.ToChar(Console.ReadLine());
+
+
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                Console.WriteLine("The number " + n + " is even");
+
+                Console.WriteLine(ch + " is Vowel.");
+
             }
-            else
+            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
             {
-                Console.WriteLine("The number " + n + " is odd");
+                Console.WriteLine(ch + " is Consonant.");
             }
-        }
-        public static void Main(String[] args)
-        {
-            Console.WriteLine("Enter the number : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            check(num);
         }
     }
 }
