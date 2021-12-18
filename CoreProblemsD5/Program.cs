@@ -1,27 +1,28 @@
 ﻿using System;
 namespace CoreProblems
 {
-    public class vowels
+    public class LargestNum
     {
-        static void Main(string[] args)
+
+        public static void largestOfThreeNumbers(int largestNumber, int num1, int num2, int num3)
         {
-            char ch;
+            if (num1 > largestNumber) largestNumber = num1;
+            if (num2 > largestNumber) largestNumber = num2;
+            if (num3 > largestNumber) largestNumber = num3;
+            Console.WriteLine("The largest number among the three numbers is : " + largestNumber);
+        }
 
-            Console.WriteLine("Enter any character: ");
-            ch = Convert.ToChar(Console.ReadLine());
+        public static void Main(String[] args)
+        {
 
-
-
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
-            {
-
-                Console.WriteLine(ch + " is Vowel.");
-
-            }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-            {
-                Console.WriteLine(ch + " is Consonant.");
-            }
+            
+            Console.WriteLine("Enter first number : ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number : ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter third number : ");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            largestOfThreeNumbers(0, num1, num2, num3);
         }
     }
 }
