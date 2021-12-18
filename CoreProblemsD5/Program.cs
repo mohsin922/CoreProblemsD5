@@ -1,41 +1,30 @@
 ﻿using System;
-namespace PowerOf2
+
+class Harmonic
 {
 
-    public class PowersOf2
-    {
+	// Function to find N-th Harmonic Number
+	static double nthHarmonic(int N)
+	{
+		// H1 = 1
+		float harmonic = 1;
 
-        public static Boolean isInputValid(int num)
-        {
-            return num >= 0 && num <= 31;
-        }
+		
+		for (int i = 2; i <= N; i++)
+		{
+			harmonic += (float)1 / i;
+		}
 
-        public static void powerOf2(int num)
-        {
-            for (int i = 0; i <= num; i++)
-            {
-                Console.WriteLine("2 power " + i + " is: " + Math.Pow(2, i));
-            }
-        }
+		return harmonic;
+	}
 
-        public static void Main(String[] args)
-        {
+	
+	static public void Main()
+	{
+		Console.WriteLine("Enter the Nth number");
+		int N = Convert.ToInt32( Console.ReadLine());
 
-            while (true)
-            {
-                Console.WriteLine("Enter the value of N: ");
-                int n = Convert.ToInt32(Console.ReadLine());
-                if (!isInputValid(n))
-                {
-                    Console.WriteLine("Entered number is invalid");
-                }
-                else
-                {
-                    powerOf2(n);
-                    break;
-
-                }
-            }
-        }
-    }
+		Console.Write("Nth number harmonic value is : " +nthHarmonic(N));
+	}
 }
+
