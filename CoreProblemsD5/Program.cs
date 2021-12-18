@@ -1,52 +1,28 @@
 ﻿using System;
-
-namespace CoreProblemsD5
+namespace LEAPYEAR
 {
 
-    public class PercentageOfHeadsNTails
+
+    public class LeapYear
     {
-        
-        public static  double flipCoin()
-        {
-            Random random = new Random();
-            return random.NextDouble();
-            
-        }
+
+
 
         public static void Main(String[] args)
         {
-            
-            int totalDieRoll = 0;
-            int headCount = 0;
-            int tailCount = 0;
-            
+            Console.WriteLine("Enter the Year : ");
+            int year = Convert.ToInt32(Console.ReadLine());
 
-
-            Console.WriteLine("Enter the number of times to flip the coin : ");
-            int userInput = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < userInput; i++)
+            if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
             {
-                double FlipCoin = flipCoin();
-                totalDieRoll++;
-
-                if (FlipCoin <= 0.5)
-                {
-                    headCount++;
-                    Console.WriteLine("Heads");
-                }
-                else if (FlipCoin >= 0.5)
-                {
-                    tailCount++;
-                    Console.WriteLine("Tails");
-                }
+                Console.WriteLine("{0} is a leap Year ", year);
             }
+            else
+            {
+                Console.WriteLine("{0} is not a leap Year ", year);
 
-            double headPercentage = ((double)headCount / (double)totalDieRoll) * 100;
-            Console.WriteLine("Head Percentage : " + headPercentage);
-            double tailPercentage = ((double)tailCount / (double)totalDieRoll) * 100;
-            Console.WriteLine("Tail Percentage : " + tailPercentage);
-
+            }
         }
     }
+
 }
