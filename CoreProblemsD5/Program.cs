@@ -1,29 +1,32 @@
 ﻿using System;
-
-public class QuotientNRemainder
+namespace CoreProblems
 {
-
-    public static void quotient(int dividend, int divisor)
-    {
-        int ans = dividend / divisor;
-        Console.WriteLine("The quotient is : " + ans);
-    }
-
-    public static void remainder(int dividend, int divisor)
-    {
-        int ans = dividend % divisor;
-        Console.WriteLine("The remainder is : " + ans);
-    }
-    public static void Main(String[] args)
+    public class SwapTwoNum
     {
 
+        public static void beforeSwap(int a, int b)
+        {
+            Console.WriteLine("Numbers before Swapping : " + a + "" + b);
+        }
 
-        Console.WriteLine("Enter the number for Dividend : ");
-        int dividend = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter the number for Divisor : ");
-        int divisor = Convert.ToInt32(Console.ReadLine());
-        quotient(dividend, divisor);
-        remainder(dividend, divisor);
+        public static void afterSwap(int a, int b)
+        {
+            int change;
+            change = a;
+            a = b;
+            b = change;
+            Console.WriteLine("Numbers after Swapping : " + a + "" + b);
+        }
+        public static void Main(String[] args)
+        {
 
+            
+            Console.WriteLine("Enter the first number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            beforeSwap(a, b);
+            afterSwap(a, b);
+        }
     }
 }
