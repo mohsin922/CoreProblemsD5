@@ -1,30 +1,25 @@
 ﻿using System;
 
-class Harmonic
+public class PrimeFactors
 {
 
-	// Function to find N-th Harmonic Number
-	static double nthHarmonic(int N)
-	{
-		// H1 = 1
-		float harmonic = 1;
+    public static void primeFactors(int num)
+    {
+        for (int i = 2; i <= num; i++)
+        {
+            while (num % i == 0)
+            {
+                Console.WriteLine(i);
+                num = num / i;
+            }
+        }
+    }
+    public static void Main(String[] args)
+    {
 
-		
-		for (int i = 2; i <= N; i++)
-		{
-			harmonic += (float)1 / i;
-		}
-
-		return harmonic;
-	}
-
-	
-	static public void Main()
-	{
-		Console.WriteLine("Enter the Nth number");
-		int N = Convert.ToInt32( Console.ReadLine());
-
-		Console.Write("Nth number harmonic value is : " +nthHarmonic(N));
-	}
+        Console.WriteLine("Enter the number : ");
+        int input = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Prime factors  of " + input + " are : ");
+        primeFactors(input);
+    }
 }
-
