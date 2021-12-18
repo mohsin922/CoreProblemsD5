@@ -1,0 +1,14 @@
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.exe
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.deps.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.runtimeconfig.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.runtimeconfig.dev.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\bin\Debug\netcoreapp3.1\CoreProblemsD5.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.csproj.AssemblyReference.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.AssemblyInfoInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.AssemblyInfo.cs
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.csproj.CoreCompileInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\CoreProblemsD5\CoreProblemsD5\obj\Debug\netcoreapp3.1\CoreProblemsD5.genruntimeconfig.cache
